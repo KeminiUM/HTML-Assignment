@@ -1,0 +1,127 @@
+/*root for easy color selection*/
+
+:root {
+  --color-1: grey;
+  --color-2: black;
+  --color-3: yellow;
+  --color-4: burlywood;
+  --color-5: lightgrey;
+}
+/*font color, background color and font style*/
+html,
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: var(--color-5);
+  color: var(--color-2);
+}
+/*Header font, position and color*/
+.Header {
+  text-align: center;
+  color: var(--color-2);
+  background-color: var(--color-4);
+}
+.Header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+/*Introduction section*/
+.Introduction {
+  font-size: 16px;
+  color: var(--color-2);
+  font-style: normal;
+  font-weight: 0;
+  text-decoration: none;
+}
+/*Recipe section*/
+.Recipe h3 {
+  font-style: italic;
+  text-decoration: underline;
+  justify-self: center;
+}
+
+.Recipe p {
+  font-size: 16px;
+  color: var(--color-2);
+}
+/*Styling Main content{ Include ingredients section and Instruction section*/
+.main {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+.Ingredients h3 {
+  font-style: italic;
+  text-decoration: underline;
+  justify-self: center;
+}
+.Instructions h3 {
+  font-style: italic;
+  text-decoration: underline;
+  justify-self: center;
+}
+
+.Instructions {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform ease;
+}
+
+.Ingredients {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: ease;
+}
+
+.Instructions:hover {
+  transform: scale(1.1);
+}
+
+.Ingredients:hover {
+  transform: scale(1.1);
+}
+/*Styling all H3 subheadings*/
+
+h3 {
+  color: brown;
+  margin-bottom: 10px;
+  font-style: italic;
+  text-decoration: underline;
+}
+/*Original recipe section*/
+.Originalrecipe {
+  text-align: center;
+  padding: 15px;
+  background: white;
+  color: var(--color-2);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.Originalrecipe:hover {
+  transform: scale(1.1);
+}
+
+.Originalrecipe p {
+  font-style: italic;
+}
+/*Created another class because I had to style the Tips and Nutritional value section*/
+.container {
+  font-size: 16px;
+  text-align: left;
+}
+/*I needed my image 1 and 2aligned in the center, Image 3 is centered automatically because its in the "main class"*/
+.Image {
+  text-align: center;
+  border-radius: 10px;
+}
+.Image2 {
+  text-align: center;
+  border-radius: 10px;
+}
